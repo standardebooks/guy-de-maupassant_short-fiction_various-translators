@@ -37,6 +37,7 @@
 		<meta property="se:is-a-collection">true</meta>
 		<meta id="collection-1" property="belongs-to-collection">Encyclopædia Britannica’s Gateway to the Great Books</meta>
 		<meta property="collection-type" refines="#collection-1">set</meta>
+		<meta property="se:title-in-collection" refines="#collection-1">Two Friends</meta>
 		<meta id="collection-2" property="belongs-to-collection">Harvard Classics Shelf of Fiction</meta>
 		<meta property="collection-type" refines="#collection-2">set</meta>
 		<dc:description id="description">A collection of short stories by Guy de Maupassant, in order of date of composition.</dc:description>

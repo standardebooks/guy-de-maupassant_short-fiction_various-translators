@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <se-lint-ignore>
 	<file path="the-rabbit.xhtml">
-		<ignore>
-			<code>t-003</code>
+		<ignore code="t-003">
 			<reason>The closing quote is missing because the next paragraph continues the dialog from the current speaker.</reason>
 		</ignore>
 	</file>
 	<file path="the-return.xhtml">
-		<ignore>
-			<code>t-003</code>
+		<ignore code="t-003">
 			<reason>The closing quote is missing because the next paragraph continues the dialog from the current speaker.</reason>
 		</ignore>
 	</file>

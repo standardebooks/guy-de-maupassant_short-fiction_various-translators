@@ -40,6 +40,10 @@
 		<meta property="se:title-in-collection" refines="#collection-1">Two Friends</meta>
 		<meta id="collection-2" property="belongs-to-collection">Harvard Classics Shelf of Fiction</meta>
 		<meta property="collection-type" refines="#collection-2">set</meta>
+		<meta property="se:title-in-collection" refines="#collection-2">Two Friends</meta>
+		<meta id="collection-3" property="belongs-to-collection">Harvard Classics Shelf of Fiction</meta>
+		<meta property="collection-type" refines="#collection-3">set</meta>
+		<meta property="se:title-in-collection" refines="#collection-3">Walter Schnaffs’ Adventure</meta>
 		<dc:description id="description">A collection of short stories by Guy de Maupassant, in order of date of composition.</dc:description>
 		<meta id="long-description" property="se:long-description" refines="#description">
 			&lt;p&gt;&lt;a href="https://standardebooks.org/ebooks/guy-de-maupassant"&gt;Guy de Maupassant&lt;/a&gt; is considered one of the preeminent writers in the realm of the short story. In a little over a decade he produced almost three hundred stories, many of which (e.g. “Boule de Suif,” “The Little Soldier”) are judged to be classics of the genre.&lt;/p&gt;

@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://www.idpf.org/2007/opf" dir="ltr" prefix="se: https://standardebooks.org/vocab/1.0" unique-identifier="uid" version="3.0" xml:lang="en-US">
+<package xmlns="http://www.idpf.org/2007/opf" dir="ltr" prefix="se: https://standardebooks.org/vocab/1.0 rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#" unique-identifier="uid" version="3.0" xml:lang="en-US">
 	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
 		<dc:identifier id="uid">https://standardebooks.org/ebooks/guy-de-maupassant/short-fiction/various-translators</dc:identifier>
 		<dc:date>2022-10-31T22:07:43Z</dc:date>
 		<meta property="dcterms:modified">2022-10-31T22:07:43Z</meta>
 		<dc:rights>The source text and artwork in this ebook are believed to be in the United States public domain; that is, they are believed to be free of copyright restrictions in the United States. They may still be copyrighted in other countries, so users located outside of the United States must check their local laws before using this ebook. The creators of, and contributors to, this ebook dedicate their contributions to the worldwide public domain via the terms in the [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/).</dc:rights>
+		<meta property="rdf:type">http://schema.org/Book</meta>
 		<dc:publisher id="publisher">Standard Ebooks</dc:publisher>
 		<meta property="file-as" refines="#publisher">Standard Ebooks</meta>
-		<meta property="se:url.homepage" refines="#publisher">https://standardebooks.org/</meta>
+		<link href="https://standardebooks.org/" refines="#publisher" rel="schema:url"/>
 		<meta property="role" refines="#publisher" scheme="marc:relators">bkd</meta>
 		<meta property="role" refines="#publisher" scheme="marc:relators">mdc</meta>
 		<meta property="role" refines="#publisher" scheme="marc:relators">pbl</meta>
 		<dc:contributor id="type-designer">The League of Moveable Type</dc:contributor>
 		<meta property="file-as" refines="#type-designer">League of Moveable Type, The</meta>
-		<meta property="se:url.homepage" refines="#type-designer">https://www.theleagueofmoveabletype.com/</meta>
+		<link href="https://www.theleagueofmoveabletype.com/" refines="#type-designer" rel="schema:url"/>
 		<meta property="role" refines="#type-designer" scheme="marc:relators">tyd</meta>
 		<meta id="conformance-statement" property="dcterms:conformsTo">EPUB Accessibility 1.1 - WCAG 2.2 Level AA</meta>
 		<meta property="a11y:certifiedBy" refines="#conformance-statement">Standard Ebooks</meta>
@@ -32,18 +33,24 @@
 		<dc:subject id="subject-1">Short stories, French--Translations into English</dc:subject>
 		<meta property="authority" refines="#subject-1">LCSH</meta>
 		<meta property="term" refines="#subject-1">sh2010113036</meta>
-		<meta property="se:subject">Fiction</meta>
-		<meta property="se:subject">Shorts</meta>
-		<meta property="se:is-a-collection">true</meta>
+		<meta property="schema:genre">Fiction</meta>
+		<meta property="schema:genre">Shorts</meta>
+		<meta property="schema:additionalType">http://schema.org/Collection</meta>
 		<meta id="collection-1" property="belongs-to-collection">Encyclopædia Britannica’s Gateway to the Great Books</meta>
 		<meta property="collection-type" refines="#collection-1">set</meta>
-		<meta property="se:title-in-collection" refines="#collection-1">Two Friends</meta>
+		<meta property="schema:hasPart" refines="#collection-1" id="collection-1-entry-1">schema:hasPart</meta>
+		<meta property="rdf:type" refines="#collection-1-entry-1">http://schema.org/CreativeWork</meta>
+		<meta property="schema:name" refines="#collection-1-entry-1">Two Friends</meta>
 		<meta id="collection-2" property="belongs-to-collection">Harvard Classics Shelf of Fiction</meta>
 		<meta property="collection-type" refines="#collection-2">set</meta>
-		<meta property="se:title-in-collection" refines="#collection-2">Two Friends</meta>
+		<meta property="schema:hasPart" refines="#collection-2" id="collection-2-entry-1">schema:hasPart</meta>
+		<meta property="rdf:type" refines="#collection-2-entry-1">http://schema.org/CreativeWork</meta>
+		<meta property="schema:name" refines="#collection-2-entry-1">Two Friends</meta>
 		<meta id="collection-3" property="belongs-to-collection">Harvard Classics Shelf of Fiction</meta>
 		<meta property="collection-type" refines="#collection-3">set</meta>
-		<meta property="se:title-in-collection" refines="#collection-3">Walter Schnaffs’ Adventure</meta>
+		<meta property="schema:hasPart" refines="#collection-3" id="collection-3-entry-1">schema:hasPart</meta>
+		<meta property="rdf:type" refines="#collection-3-entry-1">http://schema.org/CreativeWork</meta>
+		<meta property="schema:name" refines="#collection-3-entry-1">Walter Schnaffs’ Adventure</meta>
 		<dc:description id="description">A collection of short stories by Guy de Maupassant, in order of date of composition.</dc:description>
 		<meta id="long-description" property="se:long-description" refines="#description">
 			&lt;p&gt;&lt;a href="https://standardebooks.org/ebooks/guy-de-maupassant"&gt;Guy de Maupassant&lt;/a&gt; is considered one of the preeminent writers in the realm of the short story. In a little over a decade he produced almost three hundred stories, many of which (e.g. “Boule de Suif,” “The Little Soldier”) are judged to be classics of the genre.&lt;/p&gt;
@@ -118,85 +125,79 @@
 		<!-- Poems of Baudelaire (translation of Les fleurs du mal) -->
 		<!-- L’Amour du mensonge (Love of Lies) -->
 		<dc:source>https://archive.org/details/in.ernet.dli.2015.459801</dc:source>
-		<meta property="se:production-notes">
-			All but a handful of the stories (in translation) are from _The Collected Novels and Stories of Guy de Maupassant_, from Alfred A. Knopf in the early 1920s. With a few exceptions, other stories not included in that collection are from _The Works of Guy de Maupassant_, _The Complete Writings of Guy de Maupassant_, and _The Complete Works of Guy de Maupassant_, in that order. That is, the story was taken from the first of those three collections, in that order, in which it appeared.
-			The exceptions include "’Toine", taken from _Saint Anthony and Other Stories_, translated by Lefcadio Hearn, a highly-regarded translator of a number of Maupassant's stories in the early twentieth century. Hearn's version is a more accurate translation of the story than the one in _Collected Novels and Stories_. Four additional stories are included from a biography of Maupassant by Francis Steegmuller (the copyright was not renewed); these stories have not appeared in any other English collection. "Doctor Heraclius Gloss" was one of the earliest of Maupassant's stories, written circa 1875, but was not published until many years after his death. The included translation was published separately in 1923-24 by Brentano's Limited, and again has not been included in any other English collection.
-			No transcriptions were available for any of the included stories, so all were either cleaned up from OCR from epubs provided by Internet Archive/Google Books, or were typed manually.
-			The introduction is an essay Henry James wrote for _Fortnight Review_ at the height of Maupassant’s fame. It covers both his short stories and his novels up to the time of writing.
-			For unknown reasons, the _Collected Novels and Stories_ collection did not translate verse that occurred in several of the stories. This edition provides translation in endnotes; these translations were obtained from translations of the poet's work if they were found in the public domain, or from one of the other three English collections mentioned above, if they were present there.
-			The three latter collections also included a total of 66 stories between them that were attributed to Maupassant, but that were not written by him. These so-called "fake" Maupassant stories were correctly not included in the _Collected Novels and Stories_ collection, and are not present here. Further information on these "fake" stories can be found here (https://marvellousmaupassant.wordpress.com/2015/11/20/fake-maupassants/) and here (https://literature.stackexchange.com/questions/14259/which-short-stories-are-falsely-attributed-to-guy-de-maupassant-and-why).
-		</meta>
-		<meta property="se:word-count">816750</meta>
-		<meta property="se:reading-ease.flesch">70.33</meta>
-		<meta property="se:url.encyclopedia.wikipedia">https://en.wikipedia.org/wiki/List_of_short_stories_by_Guy_de_Maupassant</meta>
-		<meta property="se:url.vcs.github">https://github.com/standardebooks/guy-de-maupassant_short-fiction_various-translators</meta>
+		<meta property="schema:wordCount">816750</meta>
+		<meta property="schema:educationalLevel">70.33</meta>
+		<link href="https://en.wikipedia.org/wiki/List_of_short_stories_by_Guy_de_Maupassant" rel="schema:sameAs"/>
+		<meta property="schema:workExample" id="vcs-repository">schema:workExample</meta>
+		<meta property="rdf:type" refines="#vcs-repository">http://schema.org/SoftwareSourceCode</meta>
+		<link href="https://github.com/standardebooks/guy-de-maupassant_short-fiction_various-translators" refines="#vcs-repository" rel="schema:codeRepository"/>
 		<dc:creator id="author">Guy de Maupassant</dc:creator>
 		<meta property="file-as" refines="#author">Maupassant, Guy de</meta>
-		<meta property="se:name.person.full-name" refines="#author">Henri René Albert Guy de Maupassant</meta>
-		<meta property="se:url.encyclopedia.wikipedia" refines="#author">https://en.wikipedia.org/wiki/Guy_de_Maupassant</meta>
-		<meta property="se:url.authority.nacoaf" refines="#author">http://id.loc.gov/authorities/names/n79069916</meta>
+		<meta property="schema:alternateName" refines="#author">Henri René Albert Guy de Maupassant</meta>
+		<link href="https://en.wikipedia.org/wiki/Guy_de_Maupassant" refines="#author" rel="schema:sameAs"/>
+		<link href="https://id.loc.gov/authorities/names/n79069916.html" refines="#author" rel="schema:sameAs"/>
 		<meta property="role" refines="#author" scheme="marc:relators">aut</meta>
 		<dc:contributor id="writer-of-introduction">Henry James</dc:contributor>
 		<meta property="file-as" refines="#writer-of-introduction">James, Henry</meta>
-		<meta property="se:url.encyclopedia.wikipedia" refines="#writer-of-introduction">https://en.wikipedia.org/wiki/Henry_James</meta>
-		<meta property="se:url.authority.nacoaf" refines="#writer-of-introduction">http://id.loc.gov/authorities/names/n78091982</meta>
+		<link href="https://en.wikipedia.org/wiki/Henry_James" refines="#writer-of-introduction" rel="schema:sameAs"/>
+		<link href="https://id.loc.gov/authorities/names/n78091982.html" refines="#writer-of-introduction" rel="schema:sameAs"/>
 		<meta property="role" refines="#writer-of-introduction" scheme="marc:relators">win</meta>
 		<dc:contributor id="translator-1">Ernest Boyd</dc:contributor>
 		<meta property="file-as" refines="#translator-1">Boyd, Ernest</meta>
-		<meta property="se:name.person.full-name" refines="#translator-1">Ernest Augustus Boyd</meta>
-		<meta property="se:url.authority.nacoaf" refines="#translator-1">http://id.loc.gov/authorities/names/n50043133</meta>
+		<meta property="schema:alternateName" refines="#translator-1">Ernest Augustus Boyd</meta>
+		<link href="https://id.loc.gov/authorities/names/n50043133.html" refines="#translator-1" rel="schema:sameAs"/>
 		<meta property="role" refines="#translator-1" scheme="marc:relators">ann</meta>
 		<meta property="role" refines="#translator-1" scheme="marc:relators">trl</meta>
 		<dc:contributor id="translator-2">Storm Jameson</dc:contributor>
 		<meta property="file-as" refines="#translator-2">Jameson, Storm</meta>
-		<meta property="se:name.person.full-name" refines="#translator-2">Margaret Ethel Storm Jameson</meta>
-		<meta property="se:url.encyclopedia.wikipedia" refines="#translator-2">https://en.wikipedia.org/wiki/Storm_Jameson</meta>
-		<meta property="se:url.authority.nacoaf" refines="#translator-2">http://id.loc.gov/authorities/names/n50028993</meta>
+		<meta property="schema:alternateName" refines="#translator-2">Margaret Ethel Storm Jameson</meta>
+		<link href="https://en.wikipedia.org/wiki/Storm_Jameson" refines="#translator-2" rel="schema:sameAs"/>
+		<link href="https://id.loc.gov/authorities/names/n50028993.html" refines="#translator-2" rel="schema:sameAs"/>
 		<meta property="role" refines="#translator-2" scheme="marc:relators">trl</meta>
 		<dc:contributor id="translator-3">Jeffery E. Jeffery</dc:contributor>
 		<meta property="file-as" refines="#translator-3">Jeffery, Jeffery E.</meta>
-		<meta property="se:name.person.full-name" refines="#translator-3">Jeffery Eardley Jeffery</meta>
-		<meta property="se:url.authority.nacoaf" refines="#translator-3">http://id.loc.gov/authorities/names/nr97024840</meta>
+		<meta property="schema:alternateName" refines="#translator-3">Jeffery Eardley Jeffery</meta>
+		<link href="https://id.loc.gov/authorities/names/nr97024840.html" refines="#translator-3" rel="schema:sameAs"/>
 		<meta property="role" refines="#translator-3" scheme="marc:relators">ann</meta>
 		<meta property="role" refines="#translator-3" scheme="marc:relators">trl</meta>
 		<dc:contributor id="translator-4">Lafcadio Hearn</dc:contributor>
 		<meta property="file-as" refines="#translator-4">Hearn, Lafcadio</meta>
-		<meta property="se:name.person.full-name" refines="#translator-4">Patrick Lafcadio Hearn</meta>
-		<meta property="se:url.encyclopedia.wikipedia" refines="#translator-4">https://en.wikipedia.org/wiki/Lafcadio_Hearn</meta>
-		<meta property="se:url.authority.nacoaf" refines="#translator-4">http://id.loc.gov/authorities/names/n79073520</meta>
+		<meta property="schema:alternateName" refines="#translator-4">Patrick Lafcadio Hearn</meta>
+		<link href="https://en.wikipedia.org/wiki/Lafcadio_Hearn" refines="#translator-4" rel="schema:sameAs"/>
+		<link href="https://id.loc.gov/authorities/names/n79073520.html" refines="#translator-4" rel="schema:sameAs"/>
 		<meta property="role" refines="#translator-4" scheme="marc:relators">trl</meta>
 		<dc:contributor id="translator-5">M. Walter Dunne</dc:contributor>
 		<meta property="file-as" refines="#translator-5">Dunne, M. Walter</meta>
-		<meta property="se:url.authority.nacoaf" refines="#translator-5">http://id.loc.gov/authorities/names/no2015120440</meta>
+		<link href="https://id.loc.gov/authorities/names/no2015120440.html" refines="#translator-5" rel="schema:sameAs"/>
 		<meta property="role" refines="#translator-5" scheme="marc:relators">trl</meta>
 		<dc:contributor id="translator-6">Henry C. Olinger</dc:contributor>
 		<meta property="file-as" refines="#translator-6">Olinger, Henry C.</meta>
 		<meta property="role" refines="#translator-6" scheme="marc:relators">trl</meta>
 		<dc:contributor id="translator-7">Albert M. Cohn-McMaster</dc:contributor>
 		<meta property="file-as" refines="#translator-7">Cohn-McMaster, Albert M.</meta>
-		<meta property="se:name.person.full-name" refines="#translator-7">Albert Marian Cohn-McMaster</meta>
+		<meta property="schema:alternateName" refines="#translator-7">Albert Marian Cohn-McMaster</meta>
 		<meta property="role" refines="#translator-7" scheme="marc:relators">trl</meta>
 		<dc:contributor id="translator-8">Dora Knowlton Ranous</dc:contributor>
 		<meta property="file-as" refines="#translator-8">Ranous, Dora Knowlton</meta>
-		<meta property="se:url.encyclopedia.wikipedia" refines="#translator-8">https://en.wikipedia.org/wiki/Dora_Knowlton_Ranous</meta>
-		<meta property="se:url.authority.nacoaf" refines="#translator-8">http://id.loc.gov/authorities/names/no2002036414</meta>
+		<link href="https://en.wikipedia.org/wiki/Dora_Knowlton_Ranous" refines="#translator-8" rel="schema:sameAs"/>
+		<link href="https://id.loc.gov/authorities/names/no2002036414.html" refines="#translator-8" rel="schema:sameAs"/>
 		<meta property="role" refines="#translator-8" scheme="marc:relators">trl</meta>
 		<dc:contributor id="translator-9">Bigelow, Brown &amp; Co., Inc.</dc:contributor>
 		<meta property="file-as" refines="#translator-9">Inc., Bigelow, Brown &amp; Co.,</meta>
 		<meta property="role" refines="#translator-9" scheme="marc:relators">trl</meta>
 		<dc:contributor id="translator-10">Francis Steegmuller</dc:contributor>
 		<meta property="file-as" refines="#translator-10">Steegmuller, Francis</meta>
-		<meta property="se:url.encyclopedia.wikipedia" refines="#translator-10">https://en.wikipedia.org/wiki/Francis_Steegmuller</meta>
-		<meta property="se:url.authority.nacoaf" refines="#translator-10">http://id.loc.gov/authorities/names/n79059809</meta>
+		<link href="https://en.wikipedia.org/wiki/Francis_Steegmuller" refines="#translator-10" rel="schema:sameAs"/>
+		<link href="https://id.loc.gov/authorities/names/n79059809.html" refines="#translator-10" rel="schema:sameAs"/>
 		<meta property="role" refines="#translator-10" scheme="marc:relators">trl</meta>
 		<dc:contributor id="artist">Paul Cézanne</dc:contributor>
 		<meta property="file-as" refines="#artist">Cézenne, Paul</meta>
-		<meta property="se:url.encyclopedia.wikipedia" refines="#artist">https://en.wikipedia.org/wiki/Paul_Cézanne</meta>
-		<meta property="se:url.authority.nacoaf" refines="#artist">http://id.loc.gov/authorities/names/n79055446</meta>
+		<link href="https://en.wikipedia.org/wiki/Paul_Cézanne" refines="#artist" rel="schema:sameAs"/>
+		<link href="https://id.loc.gov/authorities/names/n79055446.html" refines="#artist" rel="schema:sameAs"/>
 		<meta property="role" refines="#artist" scheme="marc:relators">art</meta>
 		<dc:contributor id="producer-1">Vince Rice</dc:contributor>
 		<meta property="file-as" refines="#producer-1">Rice, Vince</meta>
-		<meta property="se:url.homepage" refines="#producer-1">https://www.brokenandsaved.com/</meta>
+		<link href="https://www.brokenandsaved.com/" refines="#producer-1" rel="schema:url"/>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">bkp</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">blw</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">cov</meta>
@@ -206,7 +207,7 @@
 		<meta property="role" refines="#producer-1" scheme="marc:relators">tyg</meta>
 		<dc:contributor id="producer-2">Robin Whittleton</dc:contributor>
 		<meta property="file-as" refines="#producer-2">Whittleton, Robin</meta>
-		<meta property="se:url.homepage" refines="#producer-2">http://www.robinwhittleton.com/</meta>
+		<link href="http://www.robinwhittleton.com/" refines="#producer-2" rel="schema:url"/>
 		<meta property="role" refines="#producer-2" scheme="marc:relators">pfr</meta>
 	</metadata>
 	<manifest>

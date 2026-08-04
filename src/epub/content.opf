@@ -51,7 +51,7 @@
 		<meta property="schema:hasPart" refines="#collection-3" id="collection-3-entry-1">schema:hasPart</meta>
 		<meta property="rdf:type" refines="#collection-3-entry-1">http://schema.org/CreativeWork</meta>
 		<meta property="schema:name" refines="#collection-3-entry-1">Walter Schnaffs’ Adventure</meta>
-		<dc:abstract>A collection of short stories by Guy de Maupassant, in order of date of composition.</dc:abstract>
+		<meta property="schema:abstract">A collection of short stories by Guy de Maupassant, in order of date of composition.</meta>
 		<dc:description>
 			&lt;p&gt;&lt;a href="https://standardebooks.org/ebooks/guy-de-maupassant"&gt;Guy de Maupassant&lt;/a&gt; is considered one of the preeminent writers in the realm of the short story. In a little over a decade he produced almost three hundred stories, many of which (e.g. “Boule de Suif,” “The Little Soldier”) are judged to be classics of the genre.&lt;/p&gt;
 			&lt;p&gt;As a protégé of &lt;a href="https://standardebooks.org/ebooks/gustave-flaubert"&gt;Flaubert&lt;/a&gt; and contemporary of &lt;a href="https://standardebooks.org/ebooks/emile-zola"&gt;Zola&lt;/a&gt;, Maupassant was an early practitioner of naturalism, and his stories often reflect the stark, harsh outlook that marked that movement. Brutality—towards women, as a result of war, or just representing the baseness of humankind—is a common thread. Yet stories like “Beside the Bed” and “Country Courts” show that he had a sense of humor as well. But no matter the subject, what sets Maupassant’s stories apart is his unerring ability to paint the details of the story’s setting and participants in such a way that the reader feels as if they are part of the action.&lt;/p&gt;

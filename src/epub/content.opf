@@ -38,17 +38,17 @@
 		<meta property="schema:additionalType">http://schema.org/Collection</meta>
 		<meta id="collection-1" property="belongs-to-collection">Encyclopædia Britannica’s Gateway to the Great Books</meta>
 		<meta property="collection-type" refines="#collection-1">set</meta>
-		<meta property="schema:hasPart" refines="#collection-1" id="collection-1-entry-1">schema:hasPart</meta>
+		<meta id="collection-1-entry-1" property="schema:hasPart" refines="#collection-1">schema:hasPart</meta>
 		<meta property="rdf:type" refines="#collection-1-entry-1">http://schema.org/CreativeWork</meta>
 		<meta property="schema:name" refines="#collection-1-entry-1">Two Friends</meta>
 		<meta id="collection-2" property="belongs-to-collection">Harvard Classics Shelf of Fiction</meta>
 		<meta property="collection-type" refines="#collection-2">set</meta>
-		<meta property="schema:hasPart" refines="#collection-2" id="collection-2-entry-1">schema:hasPart</meta>
+		<meta id="collection-2-entry-1" property="schema:hasPart" refines="#collection-2">schema:hasPart</meta>
 		<meta property="rdf:type" refines="#collection-2-entry-1">http://schema.org/CreativeWork</meta>
 		<meta property="schema:name" refines="#collection-2-entry-1">Two Friends</meta>
 		<meta id="collection-3" property="belongs-to-collection">Harvard Classics Shelf of Fiction</meta>
 		<meta property="collection-type" refines="#collection-3">set</meta>
-		<meta property="schema:hasPart" refines="#collection-3" id="collection-3-entry-1">schema:hasPart</meta>
+		<meta id="collection-3-entry-1" property="schema:hasPart" refines="#collection-3">schema:hasPart</meta>
 		<meta property="rdf:type" refines="#collection-3-entry-1">http://schema.org/CreativeWork</meta>
 		<meta property="schema:name" refines="#collection-3-entry-1">Walter Schnaffs’ Adventure</meta>
 		<meta property="schema:abstract">A collection of short stories by Guy de Maupassant, in order of date of composition.</meta>
@@ -191,8 +191,8 @@
 		<link href="https://id.loc.gov/authorities/names/n79059809.html" refines="#translator-10" rel="schema:sameAs"/>
 		<meta property="role" refines="#translator-10" scheme="marc:relators">trl</meta>
 		<dc:contributor id="artist">Paul Cézanne</dc:contributor>
-		<meta property="file-as" refines="#artist">Cézenne, Paul</meta>
-		<link href="https://en.wikipedia.org/wiki/Paul_Cézanne" refines="#artist" rel="schema:sameAs"/>
+		<meta property="file-as" refines="#artist">Cézanne, Paul</meta>
+		<link href="https://en.wikipedia.org/wiki/Paul_C%C3%A9zanne" refines="#artist" rel="schema:sameAs"/>
 		<link href="https://id.loc.gov/authorities/names/n79055446.html" refines="#artist" rel="schema:sameAs"/>
 		<meta property="role" refines="#artist" scheme="marc:relators">art</meta>
 		<dc:contributor id="producer-1">Vince Rice</dc:contributor>
@@ -207,7 +207,7 @@
 		<meta property="role" refines="#producer-1" scheme="marc:relators">tyg</meta>
 		<dc:contributor id="producer-2">Robin Whittleton</dc:contributor>
 		<meta property="file-as" refines="#producer-2">Whittleton, Robin</meta>
-		<link href="http://www.robinwhittleton.com/" refines="#producer-2" rel="schema:url"/>
+		<link href="https://www.robinwhittleton.com/" refines="#producer-2" rel="schema:url"/>
 		<meta property="role" refines="#producer-2" scheme="marc:relators">pfr</meta>
 	</metadata>
 	<manifest>
